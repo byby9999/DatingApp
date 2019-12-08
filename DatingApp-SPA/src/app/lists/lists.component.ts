@@ -34,7 +34,7 @@ export class ListsComponent implements OnInit {
         this.users = res.result;
         this.pagination = res.pagination;
       }, error => {
-        this.alertify.error(error);
+        this.alertify.error(error + 'Cannot load users');
       });
   }
   pageChanged(event: any): void {

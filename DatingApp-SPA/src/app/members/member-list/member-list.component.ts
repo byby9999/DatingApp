@@ -52,7 +52,7 @@ export class MemberListComponent implements OnInit {
         this.users = res.result;
         this.pagination = res.pagination;
       }, error => {
-        this.alertify.error(error);
+        this.alertify.error('Cannot Load Users');
       });
   }
 

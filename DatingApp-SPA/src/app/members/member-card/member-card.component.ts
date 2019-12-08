@@ -22,7 +22,7 @@ export class MemberCardComponent implements OnInit {
       .subscribe(data => {
         this.alertify.success('You have liked: ' + this.user.knownAs);
       }, error => {
-        this.alertify.error(error);
+        this.alertify.error('Error liking');
       });
   }
 }
